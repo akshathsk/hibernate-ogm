@@ -159,9 +159,9 @@ public class PositionalParametersStoredProcedureCallTest extends OgmJpaTestCase 
 			// 	}	
 			// } );
 			for(Object ele : listResult) {
-				if ( Integer.class.isInstance(ele) ) {
+				if ( obj instanceof Integer ) {
 					assertThat( Integer.valueOf( String.valueOf(listResult.get( 0 )))).isEqualTo( 3 );
-				} else if ( String.class.isInstance(ele) ) {
+				} else if ( obj instanceof String ) {
 					assertThat( String.valueOf(listResult.get( 1 ))).isEqualTo( "title'2" );
 				}	
 			}
