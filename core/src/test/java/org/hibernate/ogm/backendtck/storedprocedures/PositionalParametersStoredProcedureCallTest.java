@@ -153,7 +153,7 @@ public class PositionalParametersStoredProcedureCallTest extends OgmJpaTestCase 
 			assertThat( listResult ).hasSize( 2 );
 			for ( Object ele : listResult ) {
 				if ( ele instanceof Integer ) {
-					assertThat( Integer.valueOf( String.valueOf( ele) ) ).isEqualTo( 2 );
+					assertThat( Integer.valueOf( String.valueOf( ele ) ) ).isEqualTo( 2 );
 				} 
 				else if ( ele instanceof String ) {
 					assertThat( String.valueOf( ele ) ).isEqualTo( "title'2" );
