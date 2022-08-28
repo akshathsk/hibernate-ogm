@@ -16,7 +16,6 @@ import static org.hibernate.ogm.utils.GridDialectType.INFINISPAN_REMOTE;
 import static org.hibernate.ogm.utils.GridDialectType.NEO4J_REMOTE;
 
 import java.util.List;
-import java.lang.Integer;
 
 import javax.persistence.EntityManager;
 import javax.persistence.Parameter;
